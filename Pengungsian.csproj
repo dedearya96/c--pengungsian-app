@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9E54B7DB-3174-4FB6-8DDD-AD89EA94D90D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pengungsian</RootNamespace>
+    <AssemblyName>Pengungsian</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="dbConnector.cs" />
+    <Compile Include="EditLogistik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditLogistik.Designer.cs">
+      <DependentUpon>EditLogistik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditPenggunaanLogistik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditPenggunaanLogistik.Designer.cs">
+      <DependentUpon>EditPenggunaanLogistik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditPenggunaanTunai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditPenggunaanTunai.Designer.cs">
+      <DependentUpon>EditPenggunaanTunai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditPengungsi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditPengungsi.Designer.cs">
+      <DependentUpon>EditPengungsi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditPenitipan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditPenitipan.Designer.cs">
+      <DependentUpon>EditPenitipan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditRelawan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditRelawan.Designer.cs">
+      <DependentUpon>EditRelawan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditTempat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditTempat.Designer.cs">
+      <DependentUpon>EditTempat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditTunai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditTunai.Designer.cs">
+      <DependentUpon>EditTunai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDataLogistik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDataLogistik.Designer.cs">
+      <DependentUpon>FormDataLogistik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDataPengungsi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDataPengungsi.Designer.cs">
+      <DependentUpon>FormDataPengungsi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDataPenitipan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDataPenitipan.Designer.cs">
+      <DependentUpon>FormDataPenitipan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDataTempat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDataTempat.Designer.cs">
+      <DependentUpon>FormDataTempat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDataRelawan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDataRelawan.Designer.cs">
+      <DependentUpon>FormDataRelawan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDataTunai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDataTunai.Designer.cs">
+      <DependentUpon>FormDataTunai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGantiPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGantiPassword.Designer.cs">
+      <DependentUpon>FormGantiPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPenitipan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPenitipan.Designer.cs">
+      <DependentUpon>FormPenitipan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTambahLogistik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTambahLogistik.Designer.cs">
+      <DependentUpon>FormTambahLogistik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTambahPengungsi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTambahPengungsi.Designer.cs">
+      <DependentUpon>FormTambahPengungsi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTambahTunai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTambahTunai.Designer.cs">
+      <DependentUpon>FormTambahTunai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTempat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTempat.Designer.cs">
+      <DependentUpon>FormTempat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTambahRelawan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTambahRelawan.Designer.cs">
+      <DependentUpon>FormTambahRelawan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUtama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUtama.Designer.cs">
+      <DependentUpon>FormUtama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fungsi.cs" />
+    <Compile Include="Laporan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan.Designer.cs">
+      <DependentUpon>Laporan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PenggunaanDanaLogistik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PenggunaanDanaLogistik.Designer.cs">
+      <DependentUpon>PenggunaanDanaLogistik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PenggunaanDanaTunai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PenggunaanDanaTunai.Designer.cs">
+      <DependentUpon>PenggunaanDanaTunai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TambahPenggunaanLogistik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TambahPenggunaanLogistik.Designer.cs">
+      <DependentUpon>TambahPenggunaanLogistik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TambahPenggunaanTunai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TambahPenggunaanTunai.Designer.cs">
+      <DependentUpon>TambahPenggunaanTunai.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="EditLogistik.resx">
+      <DependentUpon>EditLogistik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditPenggunaanLogistik.resx">
+      <DependentUpon>EditPenggunaanLogistik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditPenggunaanTunai.resx">
+      <DependentUpon>EditPenggunaanTunai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditPengungsi.resx">
+      <DependentUpon>EditPengungsi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditPenitipan.resx">
+      <DependentUpon>EditPenitipan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditRelawan.resx">
+      <DependentUpon>EditRelawan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditTempat.resx">
+      <DependentUpon>EditTempat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditTunai.resx">
+      <DependentUpon>EditTunai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDataLogistik.resx">
+      <DependentUpon>FormDataLogistik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDataPengungsi.resx">
+      <DependentUpon>FormDataPengungsi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDataPenitipan.resx">
+      <DependentUpon>FormDataPenitipan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDataTempat.resx">
+      <DependentUpon>FormDataTempat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDataRelawan.resx">
+      <DependentUpon>FormDataRelawan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDataTunai.resx">
+      <DependentUpon>FormDataTunai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGantiPassword.resx">
+      <DependentUpon>FormGantiPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPenitipan.resx">
+      <DependentUpon>FormPenitipan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTambahLogistik.resx">
+      <DependentUpon>FormTambahLogistik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTambahPengungsi.resx">
+      <DependentUpon>FormTambahPengungsi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTambahTunai.resx">
+      <DependentUpon>FormTambahTunai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTempat.resx">
+      <DependentUpon>FormTempat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTambahRelawan.resx">
+      <DependentUpon>FormTambahRelawan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUtama.resx">
+      <DependentUpon>FormUtama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan.resx">
+      <DependentUpon>Laporan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PenggunaanDanaLogistik.resx">
+      <DependentUpon>PenggunaanDanaLogistik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PenggunaanDanaTunai.resx">
+      <DependentUpon>PenggunaanDanaTunai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="TambahPenggunaanLogistik.resx">
+      <DependentUpon>TambahPenggunaanLogistik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TambahPenggunaanTunai.resx">
+      <DependentUpon>TambahPenggunaanTunai.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Place_Icon_icon-icons.com_76443.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red_pets_icon-icons.com_59525.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flat-vector-money-icon-dollar-long-shadow-isolated-white-background-39939483.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5858ee4a150ba030400ab329_1482291023 copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\79549735-trash-can-icon-delete-move-to-trash-clear-the-disk-space-vector-illustration--Stock-Vector.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abort-156539_640.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boy_icon-icons.com_55048 copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-pencil-icon-md.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flat-vector-money-icon-dollar-long-shadow-isolated-white-background-399394831.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red_pets_icon-icons.com_59525 copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sign-emergency-code-sos_61_icon-icons.com_57216 copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\White_check_mark_in_dark_green_rounded_square.svg copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\95.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\96.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\33.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\94.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\22.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\72.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\73.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok copy1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\63.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\65.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\768128011.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\39510-1511603.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
